@@ -3,9 +3,6 @@
 #### 介绍
 一款基于SpringBoot集成的OSS对象存储整合，包含了阿里云OSS、腾讯云、七牛云对象存储。使文件上传变得简单、快速、开箱即用~
 
-#### 软件架构
-软件架构说明
-
 
 #### 安装教程
 
@@ -19,29 +16,29 @@
 ```
 #### 使用说明
 
-1. 配置参数 （按需配置）
+1. 配置参数 （按需配置即可）
 
 ```
 oss:
   type: qiniu  #对象存储厂商 阿里云/aliyun 腾讯云/tencent 七牛云/qiniu 必填 
   aliyun:
     accessKeyId:         #阿里云accessKeyId
-    accessKeySecret:     
-    endpoint:
-    domain:
-    bucketName:          
+    accessKeySecret:     #阿里云accessKeySecret
+    endpoint:            #对象存储区域地址
+    domain:              #oss域名
+    bucketName:          #oss对象桶
   tencent:     
     appid:               #腾讯云appid
     secretId:
     secretKey:
     bucketName:
-    region:
-    domain:
+    region:              #对象存储区域地址
+    domain:              #oss域名
   qiniu:                
     accessKey:           #七牛云accessKey
     secretKey:
     bucketName:
-    domain:
+    domain:              #oss域名
 ```
 
 2.  代码示例
