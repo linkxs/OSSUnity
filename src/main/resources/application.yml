@@ -1,0 +1,20 @@
+oss:
+  type: qiniu  #对象存储厂商 阿里云/aliyun 腾讯云/tencent 七牛云/qiniu
+  aliyun:
+    accessKeyId:
+    accessKeySecret:
+    endpoint:
+    domain:
+    bucketName:
+  tencent:
+    appid:
+    secretId:
+    secretKey:
+    bucketName:
+    region:
+    domain:
+  qiniu:
+    accessKey:
+    secretKey:
+    bucketName:
+    domain:
