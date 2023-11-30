@@ -29,7 +29,7 @@ oss:
     bucketName:          #oss对象桶
   tencent:     
     appid:               #腾讯云appid
-    secretId:
+    secretId:            #腾讯云secretId
     secretKey:
     bucketName:
     region:              #对象存储区域地址
