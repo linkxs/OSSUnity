@@ -11,7 +11,7 @@
 <dependency>
   <groupId>com.gitee.linkxs</groupId>
   <artifactId>oss-spring-boot-starter</artifactId>
-  <version>1.0.0</version>
+  <version>1.0.1</version>
 </dependency>
 ```
 #### 使用说明
@@ -48,7 +48,7 @@ oss:
      * 注入对象存储调用
      */
     @Autowired
-    private OssStrategyService strategyService;
+    private OSSUnity ossUnity;
 ```
 
 3.接口实例
