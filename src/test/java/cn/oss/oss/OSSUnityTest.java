@@ -2,7 +2,7 @@ package cn.oss.oss;
 
 import cn.oss.config.OSSAutoConfiguration;
 import cn.oss.enums.OSSEnum;
-import cn.oss.service.OssStrategyService;
+import cn.oss.service.OSSUnity;
 import jdk.nashorn.internal.ir.annotations.Ignore;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,18 +20,18 @@ import java.io.InputStream;
 public class OSSUnityTest {
 
     @Autowired
-    private OssStrategyService strategyService;
+    private OSSUnity ossUnity;
 
     @Test
     public void fileTest() {
-        File file = new File("C:\\Users\\Desktop\\20231118_143735.jpg");
-        String path = strategyService.upload("test/1234.jpg", file);
+        File file = new File("C:\\Users\\GW00315267\\Desktop\\20231118_143735.jpg");
+        String path = ossUnity.upload("test/1234.jpg", file);
         System.out.println(path);
     }
 
     @Test
     public void inputStreamTest(){
-        String path = strategyService.upload("test/1234.jpg", convertFileToInputStream("C:\\Users\\Desktop\\20231118_143735.jpg"));
+        String path = ossUnity.upload("test/1234.jpg", convertFileToInputStream("C:\\Users\\GW00315267\\Desktop\\20231118_143735.jpg"));
         System.out.println(path);
     }
 
