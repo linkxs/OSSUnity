@@ -1,7 +1,7 @@
 package cn.oss.service.impl;
 
 import cn.oss.properties.TencentProperties;
-import cn.oss.service.OssStrategyService;
+import cn.oss.service.OSSUnity;
 import com.qcloud.cos.COSClient;
 import com.qcloud.cos.ClientConfig;
 import com.qcloud.cos.auth.BasicCOSCredentials;
@@ -17,7 +17,7 @@ import java.io.InputStream;
  *
  * @author 轻描淡写 linkxs@qq.com
  */
-public class TencentServiceImpl implements OssStrategyService {
+public class TencentServiceImpl implements OSSUnity {
     @Resource
     private TencentProperties properties;
 

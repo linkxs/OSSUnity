@@ -5,7 +5,7 @@ import cn.oss.properties.AliyunProperties;
 import cn.oss.properties.CommonProperties;
 import cn.oss.properties.QiNiuProperties;
 import cn.oss.properties.TencentProperties;
-import cn.oss.service.OssStrategyService;
+import cn.oss.service.OSSUnity;
 import cn.oss.service.impl.AliyunServiceImpl;
 import cn.oss.service.impl.QiNiuServiceImpl;
 import cn.oss.service.impl.TencentServiceImpl;
@@ -27,7 +27,7 @@ public class OSSAutoConfiguration {
     private CommonProperties properties;
 
     @Bean
-    public OssStrategyService builderOSS() {
+    public OSSUnity builderOSS() {
         OSSEnum type = OSSEnum.getValue(properties.getType());
         switch (type) {
             case ALIYUN:

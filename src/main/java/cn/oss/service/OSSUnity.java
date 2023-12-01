@@ -8,7 +8,7 @@ import java.io.InputStream;
  *
  * @author 轻描淡写 linkxs@qq.com
  */
-public interface OssStrategyService {
+public interface OSSUnity {
 
 
     /**

@@ -1,7 +1,7 @@
 package cn.oss.service.impl;
 
 import cn.oss.properties.AliyunProperties;
-import cn.oss.service.OssStrategyService;
+import cn.oss.service.OSSUnity;
 import com.aliyun.oss.OSS;
 import com.aliyun.oss.OSSClientBuilder;
 
@@ -16,7 +16,7 @@ import java.io.InputStream;
  *
  * @author 轻描淡写 linkxs@qq.com
  */
-public class AliyunServiceImpl implements OssStrategyService {
+public class AliyunServiceImpl implements OSSUnity {
     @Resource
     private AliyunProperties aliyunProperties;
 

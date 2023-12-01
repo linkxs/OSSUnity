@@ -1,7 +1,7 @@
 package cn.oss.service.impl;
 
 import cn.oss.properties.QiNiuProperties;
-import cn.oss.service.OssStrategyService;
+import cn.oss.service.OSSUnity;
 import com.qiniu.common.QiniuException;
 import com.qiniu.storage.Configuration;
 import com.qiniu.storage.UploadManager;
@@ -17,7 +17,7 @@ import java.io.InputStream;
  *
  * @author 轻描淡写 linkxs@qq.com
  */
-public class QiNiuServiceImpl implements OssStrategyService {
+public class QiNiuServiceImpl implements OSSUnity {
 
     @Resource
     private QiNiuProperties properties;
